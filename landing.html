@@ -5,26 +5,103 @@
          <title>Politico</title>
          <link rel="stylesheet" type="text/css" href="css/normalize.css">
          <link rel="stylesheet" type="text/css" href="css/main.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          </head>
   <body>
 
        <header>
-              <img src="images/Vote-logo.jpg">
-
+              
+              <a href="landing.html"><img src="images/Vote-logo.jpg" /></a>
+                 
+            
          <ul>
-           <li><a href="signup.html">Sign up</a></li>
-           <li><a href="signin">Sign in</a></li>
-           <li><a href="#">Blog</a></li>
-           <li><a href="#">Contact</a></li>
+            <li><a href="#">Home</a></li>
+           <li><a href="signin.html">Sign up</a></li>
+           <li><a href="signin.html">Sign in</a></li>
+           <li><a href="admin.html">Admin</a></li>          
+            <li><a href="#">Contact</a></li>
          </ul>
        </header>     
    
-    <div class="government">
-      
+   <div class="government">
+      <i class="fa fa-users" style=" width:150px"></i>
 
-<button>Your government your choice</button>
+      <i class="fa fa-building-o" aria-hidden="true" style="color:black"></i>
+    </div>
+      <h1>Election countdown</h1>
+       <div class="countdown">
+            <div class="countdown-widget">
+                <div class="timer-box">
+                    <div class="label" style="font-family: Georgia, 'Times New Roman', Times, serif">Days</div>
+                    <div class="value days">14</div>
+                </div>
+
+                <div class="timer-box">
+                    <div class="label"style="font-family: Georgia, 'Times New Roman', Times, serif" >Hrs</div>
+                    <div class="value hours">14</div>
+                </div>
+
+                <div class="timer-box">
+                    <div class="label"style="font-family: Georgia, 'Times New Roman', Times, serif">Mins</div>
+                    <div class="value mins">14</div>
+                </div>
+
+                <div class="timer-box">
+                    <div class="label"style="font-family: Georgia, 'Times New Roman', Times, serif">Secs</div>
+                    <div class="value secs">14</div>
+                </div>
+
+                <div class="clr"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jquery.countdown.js"></script>
+       
+
+       <script type="text/javascript" src"jquery.js"></script>
+       <script type="text/javascript">
+      $(".days")
+      .countdown("2022/08/07", function(event) {
+        $(this).text(
+          event.strftime('%D')
+        );
+      });
+      $(".hours")
+      .countdown("2022/08/07", function(event) {
+        $(this).text(
+          event.strftime('%H')
+        );
+      });
+      $(".mins")
+      .countdown("2022/08/07", function(event) {
+        $(this).text(
+          event.strftime('%M')
+        );
+      });
+      $(".secs")
+      .countdown("2022/08/07", function(event) {
+        $(this).text(
+          event.strftime('%S')
+        );
+      });
+    </script>
+
+   <div class="footer">
+      <h2>Politico social media pages</h2>
+
+      <!-- Add font awesome icons -->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-youtube"></a>    
     </div>
     
+
 
   </body>
 </html>
