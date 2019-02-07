@@ -5,19 +5,23 @@
          <title>Politico</title>
          <link rel="stylesheet" type="text/css" href="css/normalize.css">
          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
          </head>
   <body>
 
        <header>
-            <a href="landing.html"><img src="images/Vote-logo.jpg" /></a>
+            <a href="index.html"><img src="images/Vote-logo.jpg" /></a>
                  
 
          <ul>
-            <li><a href="landing.html">Home</a></li>
-           <li><a href="signin.html">Sign up</a></li>
+            <li><a href="index.html">Home</a></li>
+           <li><a href="signup.html">Sign up</a></li>
            <li><a href="signin.html">Sign in</a></li>
            <li><a href="admin.html">Admin</a></li>          
-            <li><a href="#">Contact</a></li>
+            <li><a href="vote.html">Vote</a></li>
+             <li><a href="admin.html">Results</a></li>
+              <li><a href="politicians.html">Politicians</a></li>
          </ul>
        </header> 
        <style>
@@ -38,71 +42,96 @@
             }
             </style>
    
-       <p>The blow are the parties registered party</p>
+       <p>Below are the parties registered party</p>
 
        <table id="myTable">
             <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
+                    <th>Politician</th>
+                    <th>party</th>
+                    <th>party logo</th>
+                    <th>Create</th>
+                    <th>Delete</th>
                   </tr>
                   <tr>
                     <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
+                    <td>Mal</td>
+                    <td><img src="images/Score-Star.png" /></td>
+                    <td><button onclick="myCreateFunction()">Create party</button></td>
+                    <td>  <button onclick="myDeleteFunction()">Delete party</button></td>
+
                   </tr>
                   <tr>
                     <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
+                    <td>kal</td>
+                    <td><img src="images/icon-lng.png" /></td>
+                    <td><button onclick="myCreateFunction()">Create party</button></td>
+                    <td>  <button onclick="myDeleteFunction()">Delete party</button></td>
+
                   </tr>
                   <tr>
                     <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
+                    <td>Rol</td>
+                    <td><img src="images/Score-Star.png" /></td>
+                    <td><button onclick="myCreateFunction()">Create party</button></td>
+                                      
+                    <td>  <button onclick="myDeleteFunction()">Delete party</button></td>
+
                   </tr>
                   <tr>
                     <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
+                    <td>Hei</td>
+                    <td><img src="images/icon-lng.png" /></td>
+                    <td><button onclick="myCreateFunction()">Create party</button></td>
+                    <td>  <button onclick="myDeleteFunction()">Delete party</button></td>
+
                   </tr>
                   <tr>
                     <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
+                    <td>Yoshi </td>
+                    <td><img src="images/Score-Star.png" /></td>
+                     <td><button onclick="myCreateFunction()">Create party</button></td>
+                      <td>  <button onclick="myDeleteFunction()">Delete party</button></td>
+
                   </tr>
                   <tr>
                     <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
+                    <td>Giova</td>
+                    <td><img src="images/icon-lng.png" /></td>
+                     <td><button onclick="myCreateFunction()">Create party</button></td>
+                     <td><button onclick="myDeleteFunction()">Delete party</button></td>
+
                   </tr>
        </table>
        <br>
        
-       <button onclick="myCreateFunction()">Create party</button>
-       <button onclick="myDeleteFunction()">Delete party</button>
-       <button onclick="myCreateFunction()">Create office</button>
+       
 
        
        <script>
        function myCreateFunction() {
          var table = document.getElementById("myTable");
-         var row = table.insertRow(0);
-         var cell1 = row.insertCell(0);
-         var cell2 = row.insertCell(1);
-         cell1.innerHTML = "NEW CELL1";
-         cell2.innerHTML = "NEW CELL2";
+         var row = table.insertRow();
+
+         
        }
        
        function myDeleteFunction() {
-         document.getElementById("myTable").deleteRow(0);
+         document.getElementById("myTable").deleteRow(td);
        }
        </script>
       
-   <div class="footer">
-      <p>Footer</p>
+  <div class="footer" style="position: relative;">
+      <h2>Politico social media pages</h2>
+
+      <!-- Add font awesome icons -->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-youtube"></a> 
+          <p>&copy; 2019 Politico.com<p>  
+   
     </div>
     
+
 
 
   </body>

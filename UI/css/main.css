@@ -1,14 +1,14 @@
 body{
 	background-color: #BEC7CC;
-	font-family: Georgia, 'Times New Roman', Times, serif
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	
-
 }
 
 
 header{
 	width: 100%;
 	background-color: #091620;
+	position: relative;
 	
 }
 ul{
@@ -42,17 +42,18 @@ header ul li.active a{
 	color: black;
 }
 .footer {
-	position: fixed;
+	position: relative;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	background-color: #091620;
 	color: white;
 	text-align: center;
+	
  }
  .government {
 	 text-align: center;
-	 height:5opx;
+	 height:50px;
 	 background-color: white;
  }
  #btnAdd {
@@ -73,11 +74,9 @@ header ul li.active a{
   .container {
 	padding: 10px;
 	background-color: white;
-	width:50%;
+	width:100%;
 	margin: 0 auto;
-	height: 100%; /* Set to minimum height so overflow doesn't get hidden */
-    overflow-y: hidden; /* HIDE overflow; I know, it doesn't make much sense */
-	position: relative;
+	
 	
     
 }
@@ -135,26 +134,7 @@ header ul li.active a{
 	box-sizing: border-box;
   }
 
-.cont1{
-	background-color: #21B2A6;
-	height: 300px;
-	width: 100%;
-	padding: 0;
-	margin-top: -25px;
-	margin-left: 0;
-	text-align: center;
 
-}
-.cont2{
-	background-color: white;
-	height: 300px;
-	width: 100%;
-	padding: 0;
-	margin-top: 25px;
-	margin-left: 0;
-	text-align: center;
-	
-}
 p{
 	text-align: center;
 	
@@ -250,6 +230,111 @@ button{
 	background: #bb0000;
 	color: white;
   }
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+
+.ptable table{
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+.ptable{
+	margin: 0px 0% 30px 0%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+	background-color: black;
+	color: #ffe221;
+}
+
+.headin{
+	text-align: center;
+	text-decoration: none;
+	color: #ffe221;
+	margin: 30px;
+	display: block;
+}
+
+.wpos{
+	text-align: center;
+}
+
+.wpos td{
+	color: #000;
+}
+
+.pos{
+	text-align: center;
+}
+
+.pos td{
+	color: #ff7b21;
+}
+
+table .col{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.wpos:hover{
+	background-color: #fff;
+}
+
+.wpos:hover td{
+	color: #fff;
+}
+
+.pos:hover{
+	background-color: #fff;
+}
+
+.pos:hover td{
+	color: #fff;
+}
+  
   
   @media screen and (max-width: 500px) {
   .header ul li a {
