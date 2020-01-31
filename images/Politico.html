@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/USER/Desktop/politico/admin.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+         <title>Politico</title>
+         <link rel="stylesheet" type="text/css" href="./Politico_files/normalize.css">
+         <link rel="stylesheet" type="text/css" href="./Politico_files/main.css">
+         </head>
+  <body>
+
+       <header>
+            <a href="file:///C:/Users/USER/Desktop/politico/landing.html"><img src="./Politico_files/Vote-logo.jpg"></a>
+                 
+
+         <ul>
+            <li><a href="file:///C:/Users/USER/Desktop/politico/landing.html">Home</a></li>
+           <li><a href="file:///C:/Users/USER/Desktop/politico/signin.html">Sign up</a></li>
+           <li><a href="file:///C:/Users/USER/Desktop/politico/signin.html">Sign in</a></li>
+           <li><a href="file:///C:/Users/USER/Desktop/politico/admin.html">Admin</a></li>          
+            <li><a href="file:///C:/Users/USER/Desktop/politico/admin.html#">Contact</a></li>
+         </ul>
+       </header> 
+       <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+   
+       <p>The blow are the parties registered party</p>
+
+       <table id="myTable">
+            <tbody><tr>
+                    <th>Party</th>
+                    <th>politician</th>
+                    <th>office</th>
+                  </tr>
+                  <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                  </tr>
+                  <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                  </tr>
+                  <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                  </tr>
+                  <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                  </tr>
+                  <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                  </tr>
+       </tbody></table>
+       <br>
+       
+       <button onclick="myCreateFunction()">Create party</button>
+       <button onclick="myDeleteFunction()">Delete party</button>
+       <button onclick="myCreateFunction()">Create office</button>
+
+       
+       <script>
+       function myCreateFunction() {
+         var table = document.getElementById("myTable");
+         var row = table.insertRow(0);
+         var cell1 = row.insertCell(0);
+         var cell2 = row.insertCell(1);
+         cell1.innerHTML = "NEW CELL1";
+         cell2.innerHTML = "NEW CELL2";
+       }
+       
+       function myDeleteFunction() {
+         document.getElementById("myTable").deleteRow(0);
+       }
+       </script>
+      
+   <div class="footer">
+      <p>Footer</p>
+    </div>
+    
+
+
+  
+</body></html>
